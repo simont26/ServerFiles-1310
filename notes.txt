@@ -1,0 +1,8 @@
+Server files must be started in this order:
+
+1. AIServer\AIServer.exe
+2. GameServer\Ebenezer.exe
+3. BillingServer\billing-server.exe
+4. DBAgent\Aujard.exe
+5. DBAgent\ItemManager.exe
+5. LoginServer\login-server.exe

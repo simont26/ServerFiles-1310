@@ -1,0 +1,57 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;이동 비석 시작;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVENT 17681
+E SELECT_MSG -1 14258 14054 10 8033 11 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+END 
+
+EVENT 10
+E RUN_EVENT 2
+E RUN_EVENT 3
+END
+
+EVENT 2
+A CHECK_NATION 1  ;카루스
+E RUN_EVENT 4
+E RUN_EVENT 6
+END
+
+EVENT 3
+A CHECK_NATION 2  ;엘모라드
+E RUN_EVENT 8
+E RUN_EVENT 9
+END
+
+EVENT 11;그냥 가겠습니다.
+E RETURN 
+END 
+
+EVENT 4
+A CHECK_BEEF_ROAST_KARUS_VICTORY -1
+E ZONE_CHANGE 31 78 730
+E RETURN
+END
+
+EVENT 6
+A CHECK_BEEF_ROAST_NO_VICTORY -1
+E SAY -1 -1 14257 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+E RETURN
+END
+
+EVENT 8
+A CHECK_BEEF_ROAST_ELMORAD_VICTORY -1
+E ZONE_CHANGE 31 245 950
+E RETURN
+END
+
+EVENT 9
+A CHECK_BEEF_ROAST_NO_VICTORY -1
+E SAY -1 -1 14257 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+E RETURN
+END
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;이동 비석 끝 ;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
