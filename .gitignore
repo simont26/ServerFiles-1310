@@ -1,0 +1,5 @@
+./AIServer/server.ini
+./AIServer/logs/
+./GameServer/gameserver.ini
+./DBAgent/aujard.ini
+./LoginServer/login-server.conf
